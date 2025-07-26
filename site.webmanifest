@@ -1,0 +1,133 @@
+{
+ "short_name": "Notificaciones Push.",
+ "name": "PWA de Notificaciones push.",
+ "id": "/index.html",
+ "start_url": "/index.html",
+ "display": "standalone",
+ "theme_color": "#fffbfe",
+ "background_color": "#fffbfe",
+ "display_override": [
+  "window-controls-overlay"
+ ],
+ "description": "PWA de una página que permite el envío de notificaciones de tipo PUSH, a todos los usuarios que se hayan suscrito.",
+ "screenshots": [
+  {
+   "src": "/img/screenshot_horizontal.png",
+   "sizes": "1257x646",
+   "type": "image/png",
+   "form_factor": "wide",
+   "label": "PWA de Notificaciones push."
+  },
+  {
+   "src": "/img/screenshot_vertical.png",
+   "sizes": "595x644",
+   "type": "image/png",
+   "form_factor": "narrow",
+   "label": "PWA de Notificaciones push. (2)"
+  }
+ ],
+ "icons": [
+  {
+   "src": "/img/maskable_icon_x48.png",
+   "sizes": "48x48",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "/img/maskable_icon_x72.png",
+   "sizes": "72x72",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "/img/maskable_icon_x96.png",
+   "sizes": "96x96",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "/img/maskable_icon_x128.png",
+   "sizes": "128x128",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "/img/maskable_icon_x192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "/img/maskable_icon_x384.png",
+   "sizes": "384x384",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "/img/maskable_icon_x512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "/img/maskable_icon.png",
+   "sizes": "3413x3413",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "/img/icono2048.png",
+   "sizes": "2048x2048",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "/img/maskable_icon_x48.png",
+   "sizes": "48x48",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "/img/maskable_icon_x72.png",
+   "sizes": "72x72",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "/img/maskable_icon_x96.png",
+   "sizes": "96x96",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "/img/maskable_icon_x128.png",
+   "sizes": "128x128",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "/img/maskable_icon_x192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "/img/maskable_icon_x384.png",
+   "sizes": "384x384",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "/img/maskable_icon_x512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "/img/maskable_icon.png",
+   "sizes": "3413x3413",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}

@@ -1,0 +1,249 @@
+/* Selecciona el tema claro para Material Design 3. Puedes elegir
+ * light.css, light-mc.css o light-hc.css */
+@import url(light.css) screen and (prefers-color-scheme: light);
+/* Selecciona el tema oscuro para Material Design 3. Puedes elegir
+ * dark.css, dark-mc.css o dark-hc.css */
+@import url(dark.css) screen and (prefers-color-scheme: dark);
+/* Definiciones para Material Design 3  */
+@import url(../material-tokens/css/baseline.css);
+/* Fonts utilizados */
+@import url(../lib/css/roboto.css);
+@import url(../lib/css/material-symbols-outlined.css);
+/* CSS de elementos utilizados */
+@import url(../lib/css/md-ripple.css);
+@import url(../lib/css/md-top-app-bar.css);
+@import url(../lib/css/md-menu.css);
+@import url(../lib/css/md-standard-icon-button.css);
+@import url(../lib/css/md-fab-primary.css);
+@import url(../lib/css/md-filled-button.css);
+@import url(../lib/css/md-filled-text-field.css);
+@import url(../lib/css/md-outline-button.css);
+@import url(../lib/css/md-switch.css);
+@import url(../lib/css/md-slider-field.css);
+@import url(../lib/css/md-segmented-button.css);
+@import url(../lib/css/md-list.css);
+@import url(../lib/css/md-cards.css);
+@import url(../lib/css/md-tab.css);
+@import url(../lib/css/md-navigation-bar.css);
+
+html {
+ /* Indica los temas del sistema operativo que son soportados. */
+ color-scheme: light dark;
+ --tabWidth: 3.75rem;
+ --anchoNav: 22.5rem;
+}
+
+main {
+ max-width: 600px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+/* Quita un borde rojo que coloca Firefox. */
+:-moz-ui-invalid {
+ box-shadow: none;
+}
+
+body {
+ margin: 0;
+ font-family: var(--md-sys-typescale-body-large-font);
+ font-weight: var(--md-sys-typescale-body-large-weight);
+ font-size: var(--md-sys-typescale-body-large-size);
+ font-style: var(--md-sys-typescale-body-large-font-style);
+ letter-spacing: var(--md-sys-typescale-body-large-tracking);
+ line-height: var(--md-sys-typescale-body-large-line-height);
+ text-transform: var(--md-sys-typescale-body-large-text-transform);
+ text-decoration: var(--md-sys-typescale-body-large-text-decoration);
+ color: var(--md-sys-color-on-background);
+ background-color: var(--md-sys-color-background);
+ /* Las siguientes líneas Evita los cambios de apariencia al cargar estilos y
+ + custom elements, que son conocidos como Flash Of Unstyled Content (fouc). */
+ opacity: 0;
+ animation-name: fouc;
+ animation-fill-mode: forwards;
+ animation-duration: 1.5s;
+}
+
+@keyframes fouc {
+ to {
+  opacity: 1;
+ }
+}
+
+html {
+ --Font: -apple-system, BlinkMacSystemFont, roboto, sans-serif;
+ --colIntIos: white;
+ --colIntIosOnBk: #2acc2a;
+ --colIntIosOnBkFc: #1bbb1b;
+ --colIntIosOffBk: #dbdbdb;
+ --colIntIosOffBkFc: #BDBDBD;
+ /* Plain typeface */
+ --md-ref-typeface-plain: var(--Font);
+ /* Brand typeface */
+ --md-ref-typeface-brand: var(--Font);
+ --md-sys-typescale-label-large-weight-prominent:
+  var(--md-ref-typeface-weight-bold);
+ --md-box_shadow_level4:
+  0 var(--md-sys-elevation-level4) var(--md-sys-elevation-level4) var(--md-sys-color-shadow);
+ --md-box_shadow_level3:
+  0 var(--md-sys-elevation-level3) var(--md-sys-elevation-level3) var(--md-sys-color-shadow);
+ --md-box_shadow_level2:
+  0 var(--md-sys-elevation-level2) var(--md-sys-elevation-level2) var(--md-sys-color-shadow);
+ --md-box_shadow_level1:
+  0 var(--md-sys-elevation-level1) var(--md-sys-elevation-level1) var(--md-sys-color-shadow);
+ --md-box_shadow_level0: none;
+ --iconSize: 1.5rem;
+ --avatarSize: 2.5rem;
+ --imageSize: 3.5rem;
+ --videoWidth: 7.125rem;
+ --videoHeight: 4rem;
+ --scroll-headline-duracion: 2s;
+ --md-sys-state-focus-indicator-outer-offset: 0.125rem;
+ --md-sys-state-focus-indicator-thickness: 0.1875rem;
+ /* Pressed state layer opacity */
+ --state-pressed-transparency-percentage: 84%;
+ /* Focus state layer opacity */
+ --state-focus-transparency-percentage: 88%;
+ /* Hover state layer opacity */
+ --state-hover-transparency-percentage: 92%;
+}
+
+p {
+ margin: 1rem;
+}
+
+a {
+ color: var(--md-sys-color-on-background);
+}
+
+@media (prefers-color-scheme: light) {
+ :root {
+    --md-sys-color-primary: rgb(60 104 56);
+  --md-sys-color-surface-tint: rgb(60 104 56);
+  --md-sys-color-on-primary: rgb(255 255 255);
+  --md-sys-color-primary-container: rgb(189 240 179);
+  --md-sys-color-on-primary-container: rgb(37 80 35);
+  --md-sys-color-secondary: rgb(83 99 78);
+  --md-sys-color-on-secondary: rgb(255 255 255);
+  --md-sys-color-secondary-container: rgb(214 232 206);
+  --md-sys-color-on-secondary-container: rgb(59 75 56);
+  --md-sys-color-tertiary: rgb(56 101 106);
+  --md-sys-color-on-tertiary: rgb(255 255 255);
+  --md-sys-color-tertiary-container: rgb(188 235 240);
+  --md-sys-color-on-tertiary-container: rgb(30 77 82);
+  --md-sys-color-error: rgb(186 26 26);
+  --md-sys-color-on-error: rgb(255 255 255);
+  --md-sys-color-error-container: rgb(255 218 214);
+  --md-sys-color-on-error-container: rgb(147 0 10);
+  --md-sys-color-background: rgb(247 251 241);
+  --md-sys-color-on-background: rgb(25 29 23);
+  --md-sys-color-surface: rgb(247 251 241);
+  --md-sys-color-on-surface: rgb(25 29 23);
+  --md-sys-color-surface-variant: rgb(222 229 216);
+  --md-sys-color-on-surface-variant: rgb(66 73 64);
+  --md-sys-color-outline: rgb(115 121 111);
+  --md-sys-color-outline-variant: rgb(194 200 189);
+  --md-sys-color-shadow: rgb(0 0 0);
+  --md-sys-color-scrim: rgb(0 0 0);
+  --md-sys-color-inverse-surface: rgb(45 50 43);
+  --md-sys-color-inverse-on-surface: rgb(239 242 233);
+  --md-sys-color-inverse-primary: rgb(162 211 153);
+  --md-sys-color-primary-fixed: rgb(189 240 179);
+  --md-sys-color-on-primary-fixed: rgb(0 34 3);
+  --md-sys-color-primary-fixed-dim: rgb(162 211 153);
+  --md-sys-color-on-primary-fixed-variant: rgb(37 80 35);
+  --md-sys-color-secondary-fixed: rgb(214 232 206);
+  --md-sys-color-on-secondary-fixed: rgb(17 31 15);
+  --md-sys-color-secondary-fixed-dim: rgb(186 204 179);
+  --md-sys-color-on-secondary-fixed-variant: rgb(59 75 56);
+  --md-sys-color-tertiary-fixed: rgb(188 235 240);
+  --md-sys-color-on-tertiary-fixed: rgb(0 32 34);
+  --md-sys-color-tertiary-fixed-dim: rgb(160 207 212);
+  --md-sys-color-on-tertiary-fixed-variant: rgb(30 77 82);
+  --md-sys-color-surface-dim: rgb(216 219 210);
+  --md-sys-color-surface-bright: rgb(247 251 241);
+  --md-sys-color-surface-container-lowest: rgb(255 255 255);
+  --md-sys-color-surface-container-low: rgb(242 245 235);
+  --md-sys-color-surface-container: rgb(236 239 230);
+  --md-sys-color-surface-container-high: rgb(230 233 224);
+  --md-sys-color-surface-container-highest: rgb(224 228 218);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+ :root {
+    --md-sys-color-primary: rgb(162 211 153);
+  --md-sys-color-surface-tint: rgb(162 211 153);
+  --md-sys-color-on-primary: rgb(12 57 14);
+  --md-sys-color-primary-container: rgb(37 80 35);
+  --md-sys-color-on-primary-container: rgb(189 240 179);
+  --md-sys-color-secondary: rgb(186 204 179);
+  --md-sys-color-on-secondary: rgb(37 52 35);
+  --md-sys-color-secondary-container: rgb(59 75 56);
+  --md-sys-color-on-secondary-container: rgb(214 232 206);
+  --md-sys-color-tertiary: rgb(160 207 212);
+  --md-sys-color-on-tertiary: rgb(0 54 59);
+  --md-sys-color-tertiary-container: rgb(30 77 82);
+  --md-sys-color-on-tertiary-container: rgb(188 235 240);
+  --md-sys-color-error: rgb(255 180 171);
+  --md-sys-color-on-error: rgb(105 0 5);
+  --md-sys-color-error-container: rgb(147 0 10);
+  --md-sys-color-on-error-container: rgb(255 218 214);
+  --md-sys-color-background: rgb(16 20 15);
+  --md-sys-color-on-background: rgb(224 228 218);
+  --md-sys-color-surface: rgb(16 20 15);
+  --md-sys-color-on-surface: rgb(224 228 218);
+  --md-sys-color-surface-variant: rgb(66 73 64);
+  --md-sys-color-on-surface-variant: rgb(194 200 189);
+  --md-sys-color-outline: rgb(140 147 136);
+  --md-sys-color-outline-variant: rgb(66 73 64);
+  --md-sys-color-shadow: rgb(0 0 0);
+  --md-sys-color-scrim: rgb(0 0 0);
+  --md-sys-color-inverse-surface: rgb(224 228 218);
+  --md-sys-color-inverse-on-surface: rgb(45 50 43);
+  --md-sys-color-inverse-primary: rgb(60 104 56);
+  --md-sys-color-primary-fixed: rgb(189 240 179);
+  --md-sys-color-on-primary-fixed: rgb(0 34 3);
+  --md-sys-color-primary-fixed-dim: rgb(162 211 153);
+  --md-sys-color-on-primary-fixed-variant: rgb(37 80 35);
+  --md-sys-color-secondary-fixed: rgb(214 232 206);
+  --md-sys-color-on-secondary-fixed: rgb(17 31 15);
+  --md-sys-color-secondary-fixed-dim: rgb(186 204 179);
+  --md-sys-color-on-secondary-fixed-variant: rgb(59 75 56);
+  --md-sys-color-tertiary-fixed: rgb(188 235 240);
+  --md-sys-color-on-tertiary-fixed: rgb(0 32 34);
+  --md-sys-color-tertiary-fixed-dim: rgb(160 207 212);
+  --md-sys-color-on-tertiary-fixed-variant: rgb(30 77 82);
+  --md-sys-color-surface-dim: rgb(16 20 15);
+  --md-sys-color-surface-bright: rgb(54 58 52);
+  --md-sys-color-surface-container-lowest: rgb(11 15 10);
+  --md-sys-color-surface-container-low: rgb(25 29 23);
+  --md-sys-color-surface-container: rgb(29 33 27);
+  --md-sys-color-surface-container-high: rgb(39 43 37);
+  --md-sys-color-surface-container-highest: rgb(50 54 48);
+  }
+}
+
+@keyframes salePorLaIzquierda {
+ to {
+  translate: -100vw 0;
+ }
+}
+
+@keyframes entraPorLaDerecha {
+ from {
+  translate: 100vw 0;
+ }
+}
+
+@keyframes aparece {
+ from {
+  opacity: 0;
+ }
+}
+
+@keyframes desvanece {
+ to {
+  opacity: 0;
+ }
+}
