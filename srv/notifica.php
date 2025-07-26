@@ -22,7 +22,7 @@ const AUTH = [
 ejecutaServicio(function () {
 
  $webPush = new WebPush(AUTH);
- $mensaje = "Hola! 👋";
+ $mensaje = "Hola desde el equipo ProRam 👋";
 
  // Envia el mensaje a todas las suscripciones.
 
