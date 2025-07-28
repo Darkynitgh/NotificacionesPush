@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es" class="light dark">
+<html lang="es">
 
 <head>
 
  <meta charset="UTF-8">
- <title>Ayuda - Notificaciones Push</title>
+  <title>Ayuda - Notificaciones Push</title>
 
  <script src="js/registraServiceWorker.js"></script>
 
@@ -14,41 +14,37 @@
  <link rel="manifest" href="site.webmanifest">
  <script src="ungap/custom-elements.js"></script>
 
- <script type="module" src="js/configura.js"></script>
- <link rel="stylesheet" href="css/estilos.css">
- <link rel="stylesheet" href="css/transicion_pestanas.css">
- <link rel="expect" blocking="render" href="#navtabfixed">
-
+<!-- Configuración de todas las páginas con JavaSript. -->
+  <script type="module" src="js/configura.js"></script>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/transicion_pestanas.css">
+  <link rel="stylesheet" href="css/dark-hc.css">
+  <link rel="stylesheet" href="css/dark.css">
+  <link rel="stylesheet" href="css/light.css">
+  <link rel="stylesheet" href="css/light-mc.css">
+  <link rel="stylesheet" href="css/light-hc.css">
 </head>
 
 <body>
 
- <md-top-app-bar>
-
+ <main> <md-top-app-bar>
   <h1>Ayuda</h1>
-
  </md-top-app-bar>
-
-  <nav-tab-fixed id="tab"></nav-tab-fixed>
-
-
- <main>
-
   <ul class="md-list">
    <li class="md-two-line">
     <span class="headline">
      Título
     </span>
     <span class="supporting">
-     PWA de Notificaciones Push
+     Sincronizacion
     </span>
    </li>
    <li class="md-two-line">
     <span class="headline">
-     Descripción
+     Sincronizacion con material design
     </span>
     <span class="supporting">
-     PWA de una página que permite el envío de notificaciones de tipo PUSH.
+      Progressive Web App (PWA) con Material Design
     </span>
    </li>
    <li class="md-two-line">
@@ -56,22 +52,22 @@
      Autores
     </span>
     <span class="supporting">
-     Martinez Reséndiz Dierene Abigail
+     ALVA ORNELAS VALERIA
     </span>
-    <span class="supporting">  
-     Mendoza García Sherley Lizeth
+     <span class="supporting">
+     ARELLANO FERIA ULISES JESUS
     </span>
-    <span class="supporting">
-     Mercado Soto Ulises
+      <span class="supporting">
+     CASARIN HERNANDEZ MIGUEL ANGEL
     </span>
-    <span class="supporting">
-     Rivera Cortés Iván Aldair
+     <span class="supporting">
+     CONTRERAS JACOBO CESAR EDUARDO
     </span>
-    <span class="supporting">
-     Santiago Pérez Sebastián
+      <span class="supporting">
+     GONZALEZ ROSETE OMAR JAIR
     </span>
-    <span class="supporting">    
-     Torres Cruz Evelin
+     <span class="supporting">
+     LUNA LUNA FERNANDO YAIR
     </span>
    </li>
    <li class="md-two-line">
@@ -79,7 +75,7 @@
      Derechos de autor
     </span>
     <span class="supporting">
-     &copy; 2025 Proyect Innovations
+     &copy; 2024 Gilberto Pacheco Gallegos
     </span>
    </li>
    <li class="md-three-line">
@@ -107,7 +103,7 @@
 
  </main>
 
- <nav-drw></nav-drw>
+ <nav-bar></nav-bar>
 
 </body>
 

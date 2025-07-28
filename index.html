@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="light dark">
 
 <head>
 
  <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width">
+ <title>Notificaciones - Notificaciones Push</title>
 
- <title>Notificaciones Push</title>
+ <script src="js/registraServiceWorker.js"></script>
+
+ <meta name="viewport" content="width=device-width">
+ <meta name="theme-color" content="#fffbfe">
+ <link rel="icon" sizes="32x32" href="favicon.ico">
+ <link rel="manifest" href="site.webmanifest">
+ <script src="ungap/custom-elements.js"></script>
+ <script type="module" src="js/configura.js"></script>
+ <link rel="stylesheet" href="css/estilos.css">
+ <link rel="stylesheet" href="css/transicion_pestanas.css">
+ <link rel="expect" blocking="render" href="#navtabfixed">
 
 </head>
 
 <body onload="preparaVista()">
 
- <h1>Notificaciones Push</h1>
+ <md-top-app-bar class="center-aligned">
+  <h1>Notificaciones Push</h1>
+ </md-top-app-bar>
+
 
  <menu style="display: flex; list-style: none; flex-wrap: wrap; gap: 0.5rem;">
   <li>
-   <button id="btnSuscribe" type="button" hidden onclick="suscribe()">
+   <button id="btnSuscribe" class="md-filled-button" type="button" hidden onclick="suscribe()">
     Suscríbete
    </button>
   </li>
   <li>
-   <button id="btnCancela" type="button" hidden onclick="cancela()">
+   <button id="btnCancela" class="md-outline-button" type="button" hidden onclick="cancela()">
     Cancela suscripción
    </button>
   </li>
   <li>
-   <button id="btnNotifica" type="button" hidden
+   <button id="btnNotifica" class="md-filled-button" type="button" hidden
      onclick="notificaDesdeElServidor()">
     Notifica
    </button>
@@ -37,8 +50,8 @@
  </menu>
 
  <p>
-  <output id="outEstado">
-   <progress max="100">Cargando…</progress>
+  <output id="outEstado" style="width: 90%;">
+   <progress max="100">Cargando&hellip;</progress>
   </output>
  </p>
 
@@ -99,7 +112,7 @@
   async function notificaDesdeElServidor() {
    try {
     reporte.innerHTML =
-     /* html */ `<progress max="100">Cargando…</progress>`
+     /* html */ `<progress max="100">Cargando&hellip;</progress>`
     const render = await consumeJson("srv/notifica.php")
     await muestraObjeto(document, render.body)
    } catch (error) {
@@ -158,6 +171,7 @@
 
  </script>
 
+ <nav-bar></nav-bar>
 </body>
 
 </html>

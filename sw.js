@@ -17,12 +17,12 @@ const URL_SERVIDOR = "https://notipush.rf.gd"
  * conoce como número menor y se cambia cuando se realizan
  * modificaciones menores.
  */
-const VERSION = "1.1.1"
+const VERSION = "1.02"
 
 /**
  * Nombre de la carpeta de caché.
  */
-const CACHE = "pwaGCA"
+const CACHE = "PWAPUSH-" + VERSION
 
 /**
  * Archivos requeridos para que la aplicación funcione fuera de

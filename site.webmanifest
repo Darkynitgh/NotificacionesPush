@@ -1,6 +1,6 @@
 {
- "short_name": "Notificaciones Push.",
- "name": "PWA de Notificaciones push.",
+ "short_name": "NotificacionesPush.",
+ "name": "PWA de NotificacionesPush.",
  "id": "/index.html",
  "start_url": "/index.html",
  "display": "standalone",
@@ -9,7 +9,7 @@
  "display_override": [
   "window-controls-overlay"
  ],
- "description": "PWA de una página que permite el envío de notificaciones de tipo PUSH, a todos los usuarios que se hayan suscrito.",
+ "description": "PWA que permite enviar Notificaciones Push a todos los usuarios que suscritos.",
  "screenshots": [
   {
    "src": "/img/screenshot_horizontal.png",
