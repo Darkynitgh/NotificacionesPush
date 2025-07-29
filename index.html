@@ -47,7 +47,12 @@
   <li>
    <a href="srv/genera-llaves.php" target="_blank">Genera llaves</a>
   </li>
+  
  </menu>
+<section style="margin: 1rem;">
+
+
+</section>
 
  <p>
   <output id="outEstado" style="width: 90%;">
@@ -61,7 +66,16 @@
   <dl id="reporte"></dl>
 
  </fieldset>
+<p>
+  <label class="md-filled-text-field">
+    <textarea required placeholder="Escribe tu mensaje*" rows="4" id="mensajeInput"></textarea>
+    <span>Mensaje *</span>
+    <small>Este mensaje se enviará vía notificación push</small>
+  </label>
+</p>
 
+
+<button class="md-outline-button" onclick="enviarMensaje()">Enviar</button>
  <script type="module">
 
   import { exportaAHtml } from "./lib/js/exportaAHtml.js"
@@ -109,16 +123,24 @@
   }
   exportaAHtml(preparaVista)
 
-  async function notificaDesdeElServidor() {
-   try {
-    reporte.innerHTML =
-     /* html */ `<progress max="100">Cargando&hellip;</progress>`
-    const render = await consumeJson("srv/notifica.php")
+ async function notificaDesdeElServidor() {
+  try {
+    const mensaje = document.querySelector("#mensajeInput").value?.trim()
+    if (!mensaje) {
+      alert("Por favor escribe un mensaje antes de enviarlo.")
+      return
+    }
+
+    reporte.innerHTML = `<progress max="100">Cargando…</progress>`
+
+    const dto = { mensaje } // El objeto que enviarás al servidor
+    const render = await enviaJson("srv/notifica.php", dto)
     await muestraObjeto(document, render.body)
-   } catch (error) {
+  } catch (error) {
     muestraError(error)
-   }
   }
+}
+
   exportaAHtml(notificaDesdeElServidor)
 
   async function suscribe() {
